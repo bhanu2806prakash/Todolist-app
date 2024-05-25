@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TODO APPLICATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <div class="container">
+        <div class="left"></div>
+        <form id="form">
+            <label for="post">Write your post here</label>
+            <br><br>
+            <textarea name="post" id="input" cols="30" rows="10"></textarea>
+            <br><br>
+            <div id="msg"></div>
+            <button type="submit">Post</button>
+        </form>
+        <div class="right"></div>
+        <h3>Your tasks here</h3>
+        <div id="posts">
+            <div>
+            <p>Sample todo 1</p>
+            <span class="options">
+                <i class="fas fa-edit" onClick="editPost(this)"></i>
+                <i class="fas fa-trash-alt" onClick="deletePost(this)"></i>
+            </span>
+        </div>
+        <div>
+            <p>Sample to do 2</p>
+            <span class="options">
+                <i class="fas fa-edit" onClick="editPost(this)"></i>
+                <i class="fas fa-trash-alt" onClick="deletePost(this)"></i>
+            </span>
+        </div>
+    </div>
+    
+    <script src="hello.js"></script>
+</body>
+</html>
